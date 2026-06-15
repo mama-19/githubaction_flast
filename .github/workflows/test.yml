@@ -1,0 +1,9 @@
+jobs:
+  action-docs:
+    runs-on: default
+    steps:
+    - uses: actions/checkout@v4
+    - name: Setup Python
+      uses: actions/setup-python@v5
+    - name: github-actions-docs
+      uses: tjtharrison/github-actions-docs@1.2.0
